@@ -18,11 +18,9 @@ ADC.enable(36);
 Timer.set(1000, true, function() {
   
   let date = Timer.now();
-  //print(date);
 
   let voltage = ADC.read(36);
   voltage = (voltage * (5.0 / 1023.0));
-  //print('Voltage:', voltage, "v");
 
   //Change State to Active
   if(voltage > 0 && state === "inactive"){
@@ -34,9 +32,7 @@ Timer.set(1000, true, function() {
       state: state,
       date: date
     });
-    // print(message);
-    // print(state);
-    // print(topic);
+
     let ok = MQTT.pub(topic, message, 1);
     print('Published:', ok ? 'yes' : 'no', 'topic:', topic, 'message:', message);
   };
@@ -51,9 +47,7 @@ Timer.set(1000, true, function() {
       state: state,
       date: date
     });
-    // print(message);
-    // print(state);
-    // print(topic);
+
     let ok = MQTT.pub(topic, message, 1);
     print('Published:', ok ? 'yes' : 'no', 'topic:', topic, 'message:', message);
   };
