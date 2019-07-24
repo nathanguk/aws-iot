@@ -1,0 +1,7 @@
+alarm/aws-esp32_0BA2E0.crt.pem
+alarm/aws-esp32_0BA2E0.key.pem
+alarm/build/fw
+alarm/build/gen
+alarm/build/objs
+alarm/build/build.local.log
+alarm/build/build.log
