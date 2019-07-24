@@ -5,3 +5,4 @@ alarm/build/gen
 alarm/build/objs
 alarm/build/build.local.log
 alarm/build/build.log
+*.DS_store
