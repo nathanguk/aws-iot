@@ -14,7 +14,7 @@ load('api_shadow.js');
 let state = "inactive";
 let deviceid = Cfg.get('device.id');
 
-ADC.enable(36);
+ADC.enable(35);
 Timer.set(1000, true, function() {
   
   let date = Timer.now();
