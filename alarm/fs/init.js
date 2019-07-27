@@ -19,7 +19,7 @@ Timer.set(1000, true, function() {
   
   let date = Timer.now();
 
-  let voltage = ADC.read(36);
+  let voltage = ADC.read(35);
   voltage = (voltage * (5.0 / 1023.0));
 
   //Change State to Active
